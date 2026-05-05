@@ -4,6 +4,13 @@
 # Simulated data for 2,000 students | Monthly data over 24 months
 # ============================================================================
 
+# Install if needed
+install.packages('rsconnect')
+library('rsconnect')
+
+# This creates manifest.json in your current directory
+rsconnect::writeManifest()
+
 # Create your personal library folder
 dir.create("C:/Users/linde/AppData/Local/R/win-library/4.6", showWarnings = FALSE, recursive = TRUE)
 
